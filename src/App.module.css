@@ -1,0 +1,368 @@
+.App {
+  width: 100%;
+  max-width: 1020px;
+  font-family: 'Lato', sans-serif;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+.AppHeader {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.companyIconContainer {
+  width: 300px;
+
+}
+
+.companyIcon {
+  float: left;
+  margin: 0 10px 20px 40px;
+}
+
+.companyIconText1 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.companyIconText2 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.navPanel {
+  text-transform: uppercase;
+  margin-right: 64px;
+  font-size: 14px;
+}
+
+.navLink {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navLink:hover {
+  background-color: rgba(27, 188, 155, 1);
+  color: white;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 454px;
+  background-image: url("./images/jumbotron.jpeg");
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.jumbotronTitle {
+  padding-top: 80px;
+  font-size: 55px;
+  margin: 0;
+}
+
+.jumbotronTitle span {
+  font-weight: bold;
+}
+
+.jumbotronText {
+  margin: 40px auto 50px auto;
+  max-width: 590px;
+}
+
+.button {
+  border: none;
+  background-color: rgba(27, 188, 155, 1);
+  color: white;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.jumbotronArrowContainer {
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.AppContent {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolioSection {
+  padding-top: 55px;
+  font-size: 16px;
+  padding-bottom: 60px;
+}
+
+.portfolioSection h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.portfolioSection p {
+  margin-top: 20px;
+}
+
+.menu {
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.menuElement {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: rgba(27, 188, 155, 1);
+  color: white;
+}
+
+.activeMenuElement {
+  background-color: rgba(22, 160, 134, 1);
+}
+
+.menuImg {
+  display: none;
+  margin: 17px 35px;
+  object-fit: cover;
+}
+
+.showMenuImg {
+  display: inline-block;
+}
+
+.webDesignImg {
+
+}
+
+.graphicDesignImg {
+  
+}
+
+.flatDesignImg {
+
+}
+
+.about {
+  background-color: rgba(22, 160, 134, 1);
+  color: white;
+  font-size: 14px;
+}
+
+.aboutTitle {
+  padding-top: 60px;
+  font-size: 28px;
+  margin: 0;
+}
+
+.aboutTitle + p {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.aboutContainer {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 45px;
+  padding: 0 90px 70px 90px;
+  flex-wrap: wrap;
+}
+
+.aboutContainerElem {
+  min-width: 215px;
+  max-width: 215px;
+  height: 425px;
+  background-color: white;
+  color: black;
+  margin: 0 20px;
+  font-size: 14px;
+}
+
+.containerElemImg {
+  height: 225px;
+}
+
+.ava1 {
+  background-image: url("./images/ava_1.jpeg");
+}
+
+.ava2 {
+  background-image: url("./images/ava_2.jpeg");
+}
+
+.ava3 {
+  background-image: url("./images/ava_3.jpeg");
+}
+
+.socialIcons {
+  background-color: rgba(22, 160, 134, 0.7);
+  width: 180px;
+  height: 45px;
+  margin: 0 auto;
+  position: relative;
+  top: 90px;
+  display: none;
+}
+
+.socialIcons i {
+  color: white;
+  font-size: 26px;
+  padding: 8px;
+}
+
+.containerElemImg:hover .socialIcons {
+  display: block;
+}
+
+.containerElemInner {
+  margin: 0 10px;
+}
+
+.containerElemInner .name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.containerElemInner .position {
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.containerElemInner .description {
+  text-align: left;
+}
+
+.contactUs {
+  background-color: rgb(236, 240, 241, 1);
+  padding-bottom: 60px;
+  padding: 0 40px;
+  font-size: 14px;
+}
+
+.contactUsTitle {
+  margin: 0;
+  padding-top: 55px;
+  font-size: 28px;
+}
+
+.contactUsTitle + p {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.contactUsContainer {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 40px;
+  max-width: 940px;
+  flex-wrap: wrap;
+}
+
+.contactUsForm {
+  margin-right: 10px;
+}
+
+.nameInputContainer {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.contactUsFormElem {
+  border: none;
+  margin: 10px 0 10px 0;
+  height: 45px;
+  width: 220px;
+  padding: 0;
+}
+
+.contactUsFormElem[placeholder="Your message"] {
+  width: 460px;
+  height: 155px;
+}
+
+.contactUsForm input[type="submit"] {
+  margin-top: 10px;
+  float: right;
+  width: 115px;
+  height: 35px;
+}
+
+.mapContainer {
+  text-align: left;
+}
+
+.mapContainer p {
+  display: inline;
+  padding-left: 10px;
+}
+
+.map {
+  width: 200px;
+  background-color: rgb(220, 222, 223, 1);
+  color: white;
+  height: 265px;
+  width: 460px;
+  margin: 5px 0 50px 10px;
+  text-align: center;
+  padding: 0;
+}
+
+.map p {
+  position: relative;
+  top: 90px;
+  font-size: 72px;
+  padding: 0;
+}
+
+.AppFooter {
+  background-color: rgb(45, 62, 80, 1);
+  color: white;
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footerText {
+  margin: 40px;
+}
+
+.footerArrowContainer {
+  background-color: rgba(27, 188, 155, 1);
+  width: 45px;
+  height: 45px;
+  margin: 25px 40px;
+}
+
