@@ -1,0 +1,58 @@
+.portfolioSection {
+  padding-top: 55px;
+  font-size: 16px;
+  padding-bottom: 60px;
+}
+
+.portfolioSection h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.portfolioSection p {
+  margin-top: 20px;
+}
+
+.menu {
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.menuElement {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: rgba(27, 188, 155, 1);
+  color: white;
+}
+
+.activeMenuElement {
+  background-color: rgba(22, 160, 134, 1);
+}
+
+.menuImg {
+  display: none;
+  margin: 17px 35px;
+  object-fit: cover;
+}
+
+.showMenuImg {
+  display: inline-block;
+}
+
+.webDesignImg {
+
+}
+
+.graphicDesignImg {
+  
+}
+
+.flatDesignImg {
+
+}

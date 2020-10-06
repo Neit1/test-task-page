@@ -1,0 +1,75 @@
+.navPanel {
+  text-transform: uppercase;
+  margin-right: 64px;
+  font-size: 14px;
+}
+
+.navLink {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navLink:hover {
+  background-color: rgba(27, 188, 155, 1);
+  color: white;
+}
+
+.dropbtn {
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.dropdown {
+  display: none;
+  position: relative;
+  top: 0;
+  right: 10vw;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownContent a {
+  background-color: white;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+
+.dropdown a:hover, .dropdown button:hover {
+  background-color: rgba(27, 188, 155, 1);
+  color: white;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 750px) {
+  .navPanel {
+      display: none;
+  }
+
+  .dropdown {
+      display: inline-block;
+  }
+}

@@ -1,22 +1,55 @@
 import React from 'react';
 
-class Map extends React.Component {
-    componentDidMount() {
-        window.addEventListener('load', this.handleLoad);
-      }
-      
-    handleLoad() {
-        window.ymaps.ready(() => {
-            this.localMap = new window.ymaps.Map('map', { center: this.state.center, zoom: 9 }, {
-                searchControlProvider: 'yandex#search'
-            });
+function initMap() {
+    window.ymaps.ready(function () {
+        var myMap = new window.ymaps.Map('map', {
+            center: [55.751574, 37.573856],
+            zoom: 9,
+            controls: []
         });
+     
+        var multiRoute1 = new window.ymaps.multiRouter.MultiRoute({   
+            referencePoints: [
+                'Москва, Колодезный переулок д.2а ',
+                'Москва, метро Сокольники'
+            ],
+            params: {
+                routingMode: "masstransit"  
+            }
+        }, {
+            boundsAutoApply: true,
+            routeActiveStrokeColor: '#ff0000',
+            routeStrokeColor: '#000000'
+        }
+        );
+
+        var multiRoute2 = new window.ymaps.multiRouter.MultiRoute({   
+            referencePoints: [
+                'Москва, Колодезный переулок д.2а ',
+                'Преображенская площадь'
+            ],
+            params: {
+                routingMode: "masstransit"  
+            }
+        }, {
+            boundsAutoApply: true
+        }
+        );
+    
+        myMap.geoObjects.add(multiRoute1);
+        myMap.geoObjects.add(multiRoute2);
+    });
+}
+
+class Map extends React.Component {
+
+    componentDidMount() {
+        initMap();
     }
 
     render() {
         return (
-            <div>
-                {this.localMap ? this.localMap : null}
+            <div id='map' style={{height: '265px', width: '460px'}}>
             </div>
         )
     }

@@ -1,0 +1,31 @@
+.AppHeader {
+    -webkit-display: flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding-top: 25px;
+  }
+  
+  .companyIconContainer {
+    width: 300px;
+  
+  }
+  
+  .companyIcon {
+    float: left;
+    margin: 0 10px 20px 40px;
+  }
+  
+  .companyIconText1 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  .companyIconText2 {
+    margin: 0;
+    font-size: 14px;
+  }
+  

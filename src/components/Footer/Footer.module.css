@@ -1,0 +1,20 @@
+.AppFooter {
+  background-color: rgb(45, 62, 80, 1);
+  color: white;
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footerText {
+  margin: 40px;
+}
+
+.footerArrowContainer {
+  background-color: rgba(27, 188, 155, 1);
+  width: 45px;
+  height: 45px;
+  margin: 25px 40px;
+}

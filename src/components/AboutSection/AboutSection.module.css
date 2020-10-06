@@ -1,0 +1,91 @@
+.about {
+  background-color: rgba(22, 160, 134, 1);
+  color: white;
+  font-size: 14px;
+}
+
+.aboutTitle {
+  padding-top: 60px;
+  font-size: 28px;
+  margin: 0;
+}
+
+.aboutTitle + p {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.aboutContainer {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 0 90px 50px 90px;
+  flex-wrap: wrap;
+}
+
+.aboutContainerElem {
+  min-width: 215px;
+  max-width: 215px;
+  height: 425px;
+  background-color: white;
+  color: black;
+  margin: 20px 20px;
+  font-size: 14px;
+}
+
+.containerElemImg {
+  height: 225px;
+}
+
+.ava1 {
+  background-image: url("../../images/ava_1.jpeg");
+}
+
+.ava2 {
+  background-image: url("../../images/ava_2.jpeg");
+}
+
+.ava3 {
+  background-image: url("../../images/ava_3.jpeg");
+}
+
+.socialIcons {
+  background-color: rgba(22, 160, 134, 0.7);
+  width: 180px;
+  height: 45px;
+  margin: 0 auto;
+  position: relative;
+  top: 90px;
+  display: none;
+}
+
+.socialIcons i {
+  color: white;
+  font-size: 26px;
+  padding: 8px;
+}
+
+.containerElemImg:hover .socialIcons {
+  display: block;
+}
+
+.containerElemInner {
+  margin: 0 10px;
+}
+
+.containerElemInner .name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.containerElemInner .position {
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.containerElemInner .description {
+  text-align: left;
+}
